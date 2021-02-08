@@ -49,3 +49,41 @@
 // const a = 'b';
 // a = 'c'; <= Tira error
 // console.log(a);
+
+//* Asignacion de valores a objetos
+// let name = 'Diego';
+// let edad = '22';
+//es5
+// var objetoUno = { name: name, edad: edad };
+//es6
+// var objetoDos = {name,edad};
+// console.log(objetoDos);
+
+//* Funcion flecha
+// const names = [{
+//     name: 'Diego', edad: 22
+// }, {
+//     name: 'oscar', edad: 20
+// }]
+
+// let listNames = names.map((item)=>{
+//     console.log(item.name);
+// })
+
+// let listNamesDos = names.map(item =>console.log(item.name));
+
+//* Generador funciona como un metodo con arreglo por pasos (Fibonacci)
+
+// function* helloWorld() {
+//     if (true) {
+//         yield 'Hola, ';
+//     }
+//     if (true) {
+//         yield 'World';
+//     }
+// };
+
+// const generatorHello = helloWorld();
+// console.log(generatorHello.next().value);
+// console.log(generatorHello.next().value);
+// console.log(generatorHello.next().value);
