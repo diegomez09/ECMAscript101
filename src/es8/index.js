@@ -25,3 +25,19 @@ console.log(valoresKeys);
 // ! [ 'Wero', 'Diego', 'Andrea' ]
 const valoresObjeto = Object.values(data);
 console.log(valoresObjeto);
+
+// * Async funciton
+const helloworld = () => {
+    return new Promise((resolve, reject) => {
+        (true)
+            ? setTimeout(() => resolve('Se cumplio'), 3000)
+            : reject(new Error('Tronó'))
+    })
+};
+
+const helloAsync = async () => {
+    const hello = await helloworld();
+    console.log(hello);
+}
+
+helloAsync();
